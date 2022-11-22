@@ -33,8 +33,30 @@ public class Main {
                 System.out.println("You are exiting from the program");
                 System.exit(0);
             } else {
+                switch (option) {
+                    case 1:
+                        System.out.println("Enter employee details");
+                        Scanner obj = new Scanner(System.in);
+                        System.out.println("Enter the code");
+                        int code = obj.nextInt();
+                        System.out.println("Enter name");
+                        String name = obj.next();
+                        System.out.println("Enter designation");
+                        String designation = obj.next();
+                        System.out.println("Enter salary");
+                        double salary = obj.nextDouble();
+                        System.out.println("Enter company name");
+                        String companyName = obj.next();
+                        System.out.println("Enter phn No.");
+                        long phnNo = obj.nextLong();
+                        System.out.println("Enter email");
+                        String emailId = obj.next();
+                        Employee e = new Employee(code, name, designation, salary, companyName, phnNo, emailId);
+                        arrEmp.add(e);
+                        break;
 
 
+                }
             }
         }
     }
