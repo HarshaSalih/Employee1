@@ -69,6 +69,28 @@ public class Main {
                         }
                         break;
 
+                    case 3 :
+                        System.out.println("Enter the employee code");
+                        Scanner obj1 = new Scanner(System.in);
+                        int ecode1 = obj1.nextInt();
+                        for (Employee e1 : arrEmp) {
+                            if (ecode1 == e1.code){
+                                System.out.println("Details of employee with employee code " + ecode1 + "is ");
+                                System.out.println(e1.code);
+                                System.out.println(e1.name);
+                                System.out.println(e1.designation);
+                                System.out.println(e1.salary);
+                                System.out.println(e1.companyName);
+                                System.out.println(e1.mobileNo);
+                                System.out.println(e1.email);
+                                break;
+                            }
+                            else {
+                                System.out.println("No such employee found");
+                            }
+                        }
+                        break;
+
 
 
                 }
