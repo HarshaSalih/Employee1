@@ -98,6 +98,7 @@ public class Main {
                         for (Employee e1 : arrEmp){
                             if (ecode2 == e1.code){
                                 arrEmp.remove(e1);
+                                break;
                             }
                         }
                         break;
